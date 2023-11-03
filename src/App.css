@@ -77,6 +77,20 @@
     font-size: 14px;
 }
 
+#role {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #888;
+}
+
 .form button {
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
@@ -95,7 +109,7 @@
 .form button:hover,
 .form button:active,
 .form button:focus {
-    background: #312b81;
+    background: rgb(44, 172, 93);
 }
 
 .form .message {
@@ -162,4 +176,96 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* background-color: #EF3B3A; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbari a {
+    text-decoration: none;
+    color: #000000;
+}
+
+#registri {
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    color: #2c30a4;
+}
+
+.navbari {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbari .logoi i {
+    color: #0aa5ff;
+    font-size: 22px;
+}
+
+.navbari .logoi a {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-left: 12px;
+}
+
+.menui {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu-linksi {
+    display: flex;
+    gap: 24px;
+    border-right: 1px solid #999999;
+    padding-inline: 24px;
+}
+
+.menu-links a {
+    font-weight: 500;
+    color: #999999;
+    padding: 8px 16px;
+}
+
+.menu-linksi a:hover {
+    color: white;
+}
+
+.log-ini {
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: 0.2s;
+}
+
+.log-ini:hover {
+    background-color: #0aa5ff;
+    color: white;
+}
+
+.menu-btni {
+    font-size: 32px;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+
+@media (max-width:53rem) {
+    .menu {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
 }
